@@ -1,9 +1,8 @@
 #ifndef BOARD_H
 #define BOARD_H
-#include "structures.h"
 
-void setboard(Board *board);
-void printboard(Board *board);
-int place(Board *board,int row,int col, int p);
+void setboard(int board[24][24]);
+void printboard(int board[24][24]);
+int place(int board[24][24],int row,int col,int p);
 
 #endif
