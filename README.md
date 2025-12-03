@@ -1,41 +1,32 @@
-Twixt (CLI Version)
+# Twixt (CLI Version)
 
-A command-line implementation of the classic board game Twixt, written in C.
+A command-line implementation of the classic board game **Twixt**, written in C.
 
-Project Structure
+## Project Structure
 
-Source Files (main.c, board.c, link.c): Core logic and game loop.
+* **`main.c`**: Contains the game loop, input handling, and turn logic.
 
-Header Files (board.h, link.h): Function declarations and structures.
+* **`board.c`**: Handles board initialization and printing the grid.
 
-Makefile: Script to compile and run the project easily.
+* **`link.c`**: Contains the core game logic (Knight's moves, blocking rules, and DFS pathfinding).
 
-How to Play
+* **`board.h`**: Header definitions for board operations.
 
-Prerequisites
+* **`link.h`**: Header definitions for game logic and structures.
 
-You need a C compiler (like gcc) and make installed.
+* **`Makefile`**: Script to compile and run the project easily.
 
-Compilation & Running
+## How to Play
 
-Open your terminal in this folder.
+### Prerequisites
 
-To compile and run the game in one step:
+You need a C compiler (like `gcc`) and `make` installed on your system.
 
-make run
+### Compilation & Running
 
+1. Open your terminal in the folder containing these files.
 
-To clean up compiled files:
+2. **To compile and start the game immediately:**
 
-make clean
-
-
-Rules
-
-Red connects Top <-> Bottom.
-
-Blue connects Left <-> Right.
-
-Links are formed by Knight's moves (2 spaces one way, 1 space the other).
-
-Links cannot cross each other.
+   ```bash
+   make run
